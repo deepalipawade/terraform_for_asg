@@ -1,3 +1,6 @@
+provider "aws" {
+  region = "us-east-1"
+}
 resource "aws_launch_template" "foobar" {
   name_prefix   = "foobar"
   image_id      = "ami-02c8c6db2ca4d8be4"
